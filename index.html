@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Динамическое редактирование HTML&CSS+JS</title>
+	<link rel="shortcut icon" href="icn/favicon.png" type="image/png">
+	<link rel="stylesheet" href="css/gradient.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<script defer src="cfg/config.js"></script>
+	<script defer src="js/mes.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script defer src="js/script.js"></script>	
+</head>
+<body>
+	<style id="style-code"></style>
+
+	<section id="preview" class="gradient">
+		<div class="preview-wrapper">
+			<img src="icn/favicon.png" class="preview-favicon">
+		</div>
+	</section>
+
+	<section id="tools">
+		<div class="tools-wrapper">
+			<div class="code-wrapper">
+				<div class="code-place">
+					<textarea id="htmlcode" placeholder="Ваш HTML-код"></textarea>
+				</div>
+				<div class="code-place">
+					<textarea id="csscode" placeholder="Ваш CSS-код"></textarea>
+				</div>
+			</div>
+			<div class="buttons-wrapper">
+				<div class="button gradient" id="clear-code">
+					<span class="button-icon">
+						<img src="icn/clean.png">
+					</span>
+					<span class="button-text">Очистить</span>
+				</div>
+				<div class="button gradient" id="copy-code">
+					<span class="button-icon">
+						<img src="icn/copy.png">
+					</span>
+					<span class="button-text">Копировать</span>
+				</div>
+				<div class="button gradient" id="save-code">
+					<span class="button-icon">
+						<img src="icn/save.png">
+					</span>
+					<span class="button-text">Сохранить</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="message">
+		<div class="messages-wrapper"></div>
+	</section>
+</body>
+</html>
